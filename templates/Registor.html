@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>
+
+        page for Signup
+    </h1>
+
+    <span class="error" style="display: {{display}};"> User exits </span>
+    <form method="POST" action="/" >
+
+        <label for="name"> Enter your name</label>
+        <input type="Name" name="name" id="name">
+        <br>
+        <label for="email"> Enter your Email</label>
+        <input type="Email" name="email" id="email">
+        <br>
+        <label for="pass"> Enter your password</label>
+        <input type="password" name="password" id="pass">
+
+        <button type="submit" id="btn" onsubmit="event.preventDefault(); return false;"> Sinup</button>
+        
+    </form>
+    <a href={{url_for('login')}}> login </a>
+
+    
+</body>
+<style>
+
+input {
+      margin: 20px;
+      font-size: large;
+      padding: 10px;
+    }
+    button{
+      padding: 0.5rem;
+    }
+</style>
+<script>
+
+
+console.log({{ dis }})
+
+</script>
+</html>
