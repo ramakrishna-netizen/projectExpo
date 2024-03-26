@@ -2,7 +2,8 @@
 ## configs
 ## **render_template** funtion, redirect(url_for())
 ## Static files {{ url_for('static', filename='css/style.css')}}
-## <img src= "{{url_for('static', filename='/Image/GP.png')}}" >
+
+<img src= "{{url_for('static', filename='/Image/GP.png')}}" >
 ## templating engine
 ## db -flask_sqlalchemy, 
 ## Authentication better to use sessions    
